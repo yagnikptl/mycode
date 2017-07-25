@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GYI-GT-9B3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" definesPresentationContext="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W9j-AO-GtN"/>
+                        <viewControllerLayoutGuide type="bottom" id="5EQ-Mh-zYu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selection Form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfg-Bw-sQG">
+                                <rect key="frame" x="20" y="46" width="280" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="VYi-xt-EQw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qx7-T9-Qcc">
+                                <rect key="frame" x="20" y="106" width="149" height="18"/>
+                                <state key="normal" title="Select Country Name">
+                                    <color key="titleColor" red="1" green="0.52250506873979474" blue="0.23299998636692043" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="countryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ujh-gV-icU"/>
+                                    <segue destination="g4l-c3-GKe" kind="modal" identifier="" id="a68-yj-qHe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1g-a0-B5p">
+                                <rect key="frame" x="20" y="148" width="159" height="30"/>
+                                <state key="normal" title="Select State Name">
+                                    <color key="titleColor" red="1" green="0.51745444388787476" blue="0.20975420553912338" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Jd-fM-hQ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvG-wX-Jy1">
+                                <rect key="frame" x="20" y="192" width="159" height="30"/>
+                                <state key="normal" title="Select City Name">
+                                    <color key="titleColor" red="1" green="0.52327207244901808" blue="0.21852927684049583" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cityButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqK-b8-bN9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.88172427180000001" blue="0.83983117650000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="b1g-a0-B5p" firstAttribute="leading" secondItem="qx7-T9-Qcc" secondAttribute="leading" id="0oA-Mz-bJm"/>
+                            <constraint firstItem="qx7-T9-Qcc" firstAttribute="top" secondItem="Vfg-Bw-sQG" secondAttribute="bottom" constant="32" id="2Wk-3A-d5w"/>
+                            <constraint firstItem="WvG-wX-Jy1" firstAttribute="top" secondItem="b1g-a0-B5p" secondAttribute="bottom" constant="14" id="CO0-Df-xcd"/>
+                            <constraint firstItem="b1g-a0-B5p" firstAttribute="trailing" secondItem="qx7-T9-Qcc" secondAttribute="trailing" id="Dvl-Ac-fn6"/>
+                            <constraint firstItem="Vfg-Bw-sQG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EUz-Uo-653"/>
+                            <constraint firstItem="Vfg-Bw-sQG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="HGa-mO-FUy"/>
+                            <constraint firstItem="b1g-a0-B5p" firstAttribute="top" secondItem="qx7-T9-Qcc" secondAttribute="bottom" constant="12" id="W6Z-T9-Hyh"/>
+                            <constraint firstItem="Vfg-Bw-sQG" firstAttribute="top" secondItem="W9j-AO-GtN" secondAttribute="bottom" constant="26" id="hKU-VT-2WA"/>
+                            <constraint firstItem="Vfg-Bw-sQG" firstAttribute="leading" secondItem="qx7-T9-Qcc" secondAttribute="leading" id="sjI-zN-kyb"/>
+                            <constraint firstItem="WvG-wX-Jy1" firstAttribute="trailing" secondItem="b1g-a0-B5p" secondAttribute="trailing" id="yrn-9u-9gQ"/>
+                            <constraint firstItem="WvG-wX-Jy1" firstAttribute="leading" secondItem="b1g-a0-B5p" secondAttribute="leading" id="zKw-87-od7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cfR-v6-g8U"/>
+                    <connections>
+                        <outlet property="btnCountryName" destination="qx7-T9-Qcc" id="NVz-9d-Ljs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="tcT-a5-lf2"/>
+            </objects>
+            <point key="canvasLocation" x="1123" y="291"/>
+        </scene>
+        <!--TabledataVC-->
+        <scene sceneID="c2T-lt-F6F">
+            <objects>
+                <viewController storyboardIdentifier="tabledataVC" modalPresentationStyle="overCurrentContext" id="g4l-c3-GKe" customClass="tabledataVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6bo-3g-7gr"/>
+                        <viewControllerLayoutGuide type="bottom" id="DUK-ur-tnQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="To5-TX-KHe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z3y-Ng-Kdb">
+                                <rect key="frame" x="46" y="86" width="231" height="88"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>countryName</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="g4l-c3-GKe" id="4dL-xS-Y6V"/>
+                                </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdI-jn-WFg">
+                                <rect key="frame" x="245" y="55" width="32" height="31"/>
+                                <state key="normal" title="Button" image="download.jpeg"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="J7Q-am-yOf"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ysh-PB-O1l">
+                                <rect key="frame" x="46" y="132" width="231" height="384"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.91115149897965764" green="0.96577101997621984" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellRecord" id="RKv-kU-ewo">
+                                        <rect key="frame" x="0.0" y="28" width="231" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RKv-kU-ewo" id="DLg-PD-BSi">
+                                            <rect key="frame" x="0.0" y="0.0" width="231" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellrecord1" id="tOv-g0-sKg">
+                                        <rect key="frame" x="0.0" y="72" width="231" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tOv-g0-sKg" id="Vcc-xR-VMQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="231" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="g4l-c3-GKe" id="qmJ-LZ-MMN"/>
+                                    <outlet property="delegate" destination="g4l-c3-GKe" id="64f-2g-5mW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem id="M0h-c8-3gt"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="ygi-KP-15m" id="T0g-PX-t9I"/>
+                        <outlet property="searchtext" destination="Z3y-Ng-Kdb" id="QKA-M4-fNs"/>
+                        <outlet property="tableview" destination="ysh-PB-O1l" id="cPc-MT-kBN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3R-hH-Dro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="8kJ-mq-Xfp"/>
+                <searchDisplayController id="ygi-KP-15m">
+                    <connections>
+                        <outlet property="delegate" destination="g4l-c3-GKe" id="24f-ze-Itp"/>
+                        <outlet property="searchBar" destination="Z3y-Ng-Kdb" id="lHg-BA-XRQ"/>
+                        <outlet property="searchContentsController" destination="g4l-c3-GKe" id="ZZ4-04-Glh"/>
+                        <outlet property="searchResultsDataSource" destination="g4l-c3-GKe" id="uD1-T7-XSg"/>
+                        <outlet property="searchResultsDelegate" destination="g4l-c3-GKe" id="MUs-Wt-9Sh"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1515" y="291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sOh-3g-lLv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GYI-GT-9B3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ks1-kv-xY6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fuj-FG-fad"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VB1-aV-g6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="download.jpeg" width="225" height="225"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="J7Q-am-yOf"/>
+    </inferredMetricsTieBreakers>
+</document>
